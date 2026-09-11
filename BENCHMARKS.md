@@ -15,3 +15,13 @@ Empirical retrieval accuracy (NDCG@10, MRR@10) across chunking strategies: Fixed
 
 ---
 Maintained by [RAGInspect](https://raginspect.pages.dev/).
+
+## 📚 In-Depth Technical Implementation Guides
+
+| Target Engineering Query | Production Reference & Guide URL |
+| :--- | :--- |
+| **Rag Semantic Chunking Benchmark** | [https://raginspect.pages.dev/semantic-chunking-vs-fixed-size-rag-benchmarks/](https://raginspect.pages.dev/semantic-chunking-vs-fixed-size-rag-benchmarks/) |
+| **Hybrid Search Bm25 Dense Vector Accuracy** | [https://raginspect.pages.dev/hybrid-search-bm25-vs-dense-vector-accuracy/](https://raginspect.pages.dev/hybrid-search-bm25-vs-dense-vector-accuracy/) |
+| **Recursive Character Text Splitter Vs Semantic Chunking** | [https://raginspect.pages.dev/recursive-vs-semantic-chunking/](https://raginspect.pages.dev/recursive-vs-semantic-chunking/) |
+| **Bm25 K1 B Parameter Tuning Rag** | [https://raginspect.pages.dev/bm25-k1-b-hyperparameter-tuning/](https://raginspect.pages.dev/bm25-k1-b-hyperparameter-tuning/) |
+
