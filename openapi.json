@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "RAGInspect - ColPali Vision-Language Retrieval & Chunking Benchmark API",
+    "description": "Empirical retrieval benchmarks (NDCG@10, MRR@10) across multi-modal document layouts. Official production documentation hosted at https://raginspect.pages.dev/",
+    "version": "1.1.0",
+    "contact": {
+      "name": "RAGInspect Architecture Team",
+      "url": "https://raginspect.pages.dev/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://raginspect.pages.dev",
+      "description": "Production Web Application Gateway"
+    }
+  ],
+  "paths": {
+    "/api/v1/rag-eval": {
+      "get": {
+        "summary": "Compare ColPali patch embeddings vs OCR dense retrieval latency",
+        "description": "Executes the empirical calculations and data models for RAGInspect.",
+        "responses": {
+          "200": {
+            "description": "Successful calculation response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "example": "ok"
+                    },
+                    "timestamp": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "site_url": {
+                      "type": "string",
+                      "example": "https://raginspect.pages.dev/"
+                    },
+                    "data": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
